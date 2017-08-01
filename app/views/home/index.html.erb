@@ -1,2 +1,12 @@
 <h1>Timeline</h1>
 <h3>The New Instagram Experience</h3>
+
+<% @photos.each do |photo| %>
+  <div class="card">
+    <div class="card-header"><%= photo.username %></div>
+    <%= image_tag photo.url, class: "card-img-top", alt: "photo"%>
+    <div class="card-block">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+<% end %>

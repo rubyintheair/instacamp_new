@@ -3,8 +3,7 @@ class CreatePhotos < ActiveRecord::Migration[5.1]
     create_table :photos do |t|
       t.string :username
       t.text :caption
-      t.string :likes_count
-      t.string :integer
+      t.integer :likes_count
       t.string :url
 
       t.timestamps
